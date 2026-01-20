@@ -1,9 +1,9 @@
 cask "iaterm" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.26"
-  sha256 arm:   "248230d00c5a9938035da3dab6570748ebb437d266c76de07b7fbf0137d006aa",
-         intel: "7457e08292190df093f7181cb3690ab0d6348b184f7030cf35c1de23122b4415"
+  version "0.1.27"
+  sha256 arm:   "197be64e9d469c064bd76149e663b93ac90654e8bf7c1b847eb2c0b615018d58",
+         intel: "dd286abd9199566ccbdce5df46ba5bd16ef40f035f367d1a78b4cb27a1120ab1"
 
   url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_#{arch}.dmg"
   name "IATerm"
