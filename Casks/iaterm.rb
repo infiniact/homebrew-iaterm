@@ -1,11 +1,16 @@
 cask "iaterm" do
-  arch arm: "arm64", intel: "x64"
+  version "0.1.36"
 
-  version "0.1.32"
-  sha256 arm:   "f3715c2fb5be1285193f767b62d1c8b7585f7e36348db7efbbd8a6d895e417e4",
-         intel: "4f195936d670bbc425cc450d3a2ed54f79a8bf0aa07c8ca174d00a8425170165"
+  on_arm do
+    sha256 "cfe01703ff3694ffc31d7f43f4f04a69beb8d5919187aab9ea71acdfec814ef5"
+    url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_arm64.dmg"
+  end
 
-  url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_#{arch}.dmg"
+  on_intel do
+    sha256 "3e1d2fbc4efb83d39337d5e6f4cfa3fddde64c86a76fe0c92440dad08e50dd86"
+    url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_x64.dmg"
+  end
+
   name "IATerm"
   desc "AI-Powered Terminal Emulator"
   homepage "https://iaterm.infiniact.com"
