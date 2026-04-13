@@ -1,13 +1,13 @@
 cask "iaterm" do
-  version "0.1.73"
+  version "0.1.74"
 
   on_arm do
-    sha256 "ac1a6da0c77028a3865bcbfb13c4ee9349808142c4a663e39c997334dd0d69ab"
+    sha256 "06ce24690c333c643fafb9d8f5b6fe5d56d036c76c88382ac8e500334c19403a"
     url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_arm64.dmg"
   end
 
   on_intel do
-    sha256 "2e98bfebceaf76e63a582b80c923a9c98e21358d713d56cdea4b638634d92b0f"
+    sha256 "215dec3efc349857065fb0d3255cac70c579f14f5e8c3c728cd433c6aeab6000"
     url "https://github.com/infiniact/homebrew-iaterm/releases/download/v#{version}/IATerm_#{version}_x64.dmg"
   end
 
