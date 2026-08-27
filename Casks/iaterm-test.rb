@@ -8,7 +8,7 @@ cask "iaterm-test" do
   url "https://github.com/infiniact/homebrew-iaterm/releases/download/test-v#{version}/IATerm-Test_#{version}_#{arch}.dmg"
   name "IATerm Test"
   desc "AI-Powered Terminal Emulator (Test Version)"
-  homepage "https://iaterm.infiniact.com"
+  homepage "https://www.iaterm.ai"
 
   livecheck do
     url "https://github.com/infiniact/homebrew-iaterm/releases?q=test-v"
