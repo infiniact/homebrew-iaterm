@@ -20,7 +20,6 @@ cask "iaterm" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
   app "IATerm.app"
 
   zap trash: [
