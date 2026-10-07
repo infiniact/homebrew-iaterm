@@ -8,12 +8,16 @@ cask "iaterm-test" do
   url "https://github.com/infiniact/homebrew-iaterm/releases/download/test-v#{version}/IATerm-Test_#{version}_#{arch}.dmg"
   name "IATerm Test"
   desc "AI-Powered Terminal Emulator (Test Version)"
-  homepage "https://www.iaterm.ai"
+  homepage "https://www.iaterm.ai/"
 
   livecheck do
     url "https://github.com/infiniact/homebrew-iaterm/releases?q=test-v"
     regex(/test[._-]v?(\d+(?:\.\d+)+(?:-\d+)?)/i)
   end
+
+  deprecate! date: "2026-10-07", because: "is no longer published; install iaterm instead"
+
+  depends_on :macos
 
   app "IATerm Test.app"
 
