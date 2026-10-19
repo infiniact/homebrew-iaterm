@@ -8,7 +8,14 @@ The IATerm cask has moved to InfiniAct's unified tap:
 brew install --cask infiniact/release/iaterm
 ```
 
-If you installed IATerm from `infiniact/iaterm`, run `brew update` — Homebrew migrates it automatically (`tap_migrations.json`).
+If you installed IATerm from `infiniact/iaterm`, run `brew update` — Homebrew migrates it (`tap_migrations.json`).
+If Homebrew prints a migration/trust warning, finish it with:
+
+```bash
+brew install --cask infiniact/release/iaterm
+```
+
+Your installed app keeps working either way.
 See [infiniact/homebrew-release](https://github.com/infiniact/homebrew-release).
 
 > This repository is kept on purpose: its Releases host the IATerm installers and the auto-update manifest used by existing installations.
